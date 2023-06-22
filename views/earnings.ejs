@@ -59,7 +59,7 @@
     </nav>
     <!-- partial -->
     <div class="container-fluid page-body-wrapper">
-  
+    
       <nav class="sidebar sidebar-offcanvas" id="sidebar">
         <ul class="nav">
           <li class="nav-item">
@@ -69,45 +69,20 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
-              <i class="icon-layout menu-icon"></i>
-              <span class="menu-title">Investing</span>
-              <i class="menu-arrow"></i>
+            <a class="nav-link" href="/carding">
+              <i class="icon-credit-card menu-icon"></i>
+              <span class="menu-title">Get a card</span>
             </a>
-            <div class="collapse" id="ui-basic">
-              <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="/invest">Make an Investment</a></li>
-                <li class="nav-item"> <a class="nav-link" href="/deposit-funds">Deposit Funds</a></li>
-               
-              </ul>
-            </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" data-toggle="collapse" href="#form-elements" aria-expanded="false" aria-controls="form-elements">
-              <i class="icon-paper menu-icon"></i>
-              <span class="menu-title">Withdrawals</span>
-              <i class="menu-arrow"></i>
-            </a>
-            <div class="collapse" id="form-elements">
-              <ul class="nav flex-column sub-menu">
-                <li class="nav-item"><a class="nav-link" href="/withdrawal">Withdraw Funds </a></li>
-              </ul>
-            </div>
-            <div class="collapse" id="form-elements">
-              <ul class="nav flex-column sub-menu">
-                <li class="nav-item"><a class="nav-link" href="/view-withdrawal">View Withdrawal</a></li>
-              </ul>
-            </div>
           </li>
 
           <li class="nav-item">
             <a class="nav-link" href="/earnings">
               <i class="icon-bar-graph menu-icon"></i>
-              <span class="menu-title">Earnings</span>
+              <span class="menu-title">Cash back</span>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/">
+            <a class="nav-link" href="/help-desk">
               <i class="icon-columns menu-icon"></i>
               <span class="menu-title">Help desk</span>
             </a>
@@ -135,42 +110,23 @@
                 <div class="col-md-6 mb-4 stretch-card transparent">
                   <div class="card card-tale">
                     <div class="card-body">
-                      <p class="mb-4">Account Balance</p>
-                      <p class="fs-30 mb-2">$ <%= " " + user.availbalance %> </p>
+                      <p class="mb-4">Today's spending</p>
+                      <p class="fs-30 mb-2">$ <%= " " + user.todaysspending %> </p>
                      
                     </div>
                   </div>
                 </div>
-                <div class="col-md-6 mb-4 stretch-card transparent">
-                  <div class="card card-dark-blue">
-                    <div class="card-body">
-                      <p class="mb-4">Total Withdrawal</p>
-                      <p class="fs-30 mb-2">$ <%= " " + user.withdrawals %> </p>
-                      
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-md-6 mb-4 mb-lg-0 stretch-card transparent">
-                  <div class="card card-light-blue">
-                    <div class="card-body">
-                      <p class="mb-4">Plan Type</p>
-                      <p class="fs-30 mb-2"><%=  user.plantype %> </p>
-                      
-                    </div>
-                  </div>
-                </div>
                 <div class="col-md-6 stretch-card transparent">
-                  <div class="card card-light-danger">
+                  <div class="card data-icon-card-primary">
                     <div class="card-body">
-                      <p class="mb-4">Referal Bonus</p>
-                      <p class="fs-30 mb-2">$ <%= " " + user.refaralsbonus %> </p>
+                      <p class="mb-4">Total Cashback Bonus</p>
+                      <p class="fs-30 mb-2">$ <%= " " + user.cashback %> </p>
                       
                     </div>
                   </div>
                 </div>
               </div>
+              
             </div>
           </div>
         </div>

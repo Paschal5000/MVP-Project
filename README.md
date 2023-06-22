@@ -1,9 +1,4 @@
-
-#   PROJECT LEVIOSONA
-
-A project in partial fulfillment for the ALX SE program
-
-Node.js & Passport login
+# Node.js & Passport Login
 
 This is a user login and registration app using Node.js, Express, Passport, Mongoose, EJS and some other packages.
 
@@ -27,4 +22,9 @@ $ npm run dev
 
 Open "config/keys.js" and add your MongoDB URI, local or Atlas
 # vine
-# leviosona
+# vine
+# ventprise
+# exora
+# rifle
+# CM
+# CM

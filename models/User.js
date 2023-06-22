@@ -42,30 +42,28 @@ first_name: {
     type: String,
     default: '00.00'
   },
-  withdrawals:{
+  cashback:{
     type: String,
     default: '00.00'
   },
-  plantype:{
-    type: String,
-    default: 'None'
-  },
-  referalcount :{
+  todaysspending :{
     type: Number,
     default: 0
   },
-  acticvatedaccount:{
-    type: Boolean,
-    default: false,
-  },
-  refaralsbonus:{
+  cardnumber :{
     type: String,
-    default: '00.00'
+    default: 'XXXX XXXX XXXX XXXX'
   },
-  referalcode:{
+  CVV :{
     type: String,
-    required: false
+    default: 'XXX'
   },
+  expirydate :{
+    type: String,
+    default: 'XX/XX'
+  },
+
+
   date: {
     type: Date,
     default: Date.now

@@ -69,41 +69,16 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
-              <i class="icon-layout menu-icon"></i>
-              <span class="menu-title">Investing</span>
-              <i class="menu-arrow"></i>
+            <a class="nav-link" href="/carding">
+              <i class="icon-credit-card menu-icon"></i>
+              <span class="menu-title">Get a card</span>
             </a>
-            <div class="collapse" id="ui-basic">
-              <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="/invest">Make an Investment</a></li>
-                <li class="nav-item"> <a class="nav-link" href="/deposit-funds">Deposit Funds</a></li>
-               
-              </ul>
-            </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" data-toggle="collapse" href="#form-elements" aria-expanded="false" aria-controls="form-elements">
-              <i class="icon-paper menu-icon"></i>
-              <span class="menu-title">Withdrawals</span>
-              <i class="menu-arrow"></i>
-            </a>
-            <div class="collapse" id="form-elements">
-              <ul class="nav flex-column sub-menu">
-                <li class="nav-item"><a class="nav-link" href="/withdrawal">Withdraw Funds </a></li>
-              </ul>
-            </div>
-            <div class="collapse" id="form-elements">
-              <ul class="nav flex-column sub-menu">
-                <li class="nav-item"><a class="nav-link" href="/view-withdrawal">View Withdrawal</a></li>
-              </ul>
-            </div>
           </li>
 
           <li class="nav-item">
             <a class="nav-link" href="/earnings">
               <i class="icon-bar-graph menu-icon"></i>
-              <span class="menu-title">Earnings</span>
+              <span class="menu-title">Cash back</span>
             </a>
           </li>
           <li class="nav-item">
@@ -123,7 +98,7 @@
                 <div class="col-12 col-xl-8 mb-4 mb-xl-0">
                   <h3 class="font-weight-bold">Welcome Back, <%= " " 
                   + user.first_name %></h3>
-                  <h6 class="font-weight-normal mb-0">General overview of Earnings, Transactions and Investments </h6>
+                  <h6 class="font-weight-normal mb-0">General overview of card spending and usage </h6>
                 </div>
              
               </div>
@@ -133,27 +108,27 @@
             <div class="col-lg-12 col-md-12 grid-margin transparent">
               <div class="row">
                 <div class="col-md-6 mb-4 stretch-card transparent">
-                  <div class="card card-tale">
+                  <div class="card data-icon-card-primary">
                     <div class="card-body">
-                      <p class="mb-4">Account Balance</p>
+                      <p class="mb-4">Card Balance</p>
                       <p class="fs-30 mb-2">$ <%= " " + user.availbalance %> </p>
                      
                     </div>
                   </div>
                 </div>
                 <div class="col-md-6 mb-4 stretch-card transparent">
-                  <div class="card card-dark-blue">
+                  <div class="card data-icon-card-primary">
                     <div class="card-body">
-                      <p class="mb-4">Active Deposit</p>
+                      <p class="mb-4">Card Active Deposit</p>
                       <p class="fs-30 mb-2">$ <%= " " + user.activedeposit %> </p>
                       
                     </div>
                   </div>
                 </div>
                 <div class="col-md-6 mb-4 stretch-card transparent">
-                  <div class="card card-dark-blue">
+                  <div class="card card-inverse-success">
                     <div class="card-body">
-                      <p class="mb-4">Active Investment</p>
+                      <p class="mb-4">Card Spendig</p>
                       <p class="fs-30 mb-2">$ <%= " " + user.activeinvestment %> </p>
                       
                     </div>
@@ -168,10 +143,10 @@
               <div class="card-body">
                 
                 <div class="template-demo">
-                  <a type="button" class="btn btn-info btn-lg btn-block" href="/invest">Make an  investment
+                  <a type="button" class="btn btn-success btn-lg btn-block" href="/carding">Get a card
                  
                   </a>
-                  <a type="button" class="btn btn-secondary btn-lg btn-block" href="withdrawal">Make withdrawals 
+                  <a type="button" class="btn btn-secondary btn-lg btn-block" href="/earnings">cashback earnings 
                  
                   </a>
 

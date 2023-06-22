@@ -16,14 +16,14 @@ router.get('/about', forwardAuthenticated, (req, res) => res.render('about'));
 
 
 
-// service 
-router.get('/services', forwardAuthenticated, (req, res) => res.render('services'));
+// Wallet 
+router.get('/wallet', forwardAuthenticated, (req, res) => res.render('wallet'));
 
 
 
 
-// Investing 
-router.get('/investing', forwardAuthenticated, (req, res) => res.render('investing'));
+// card 
+router.get('/card', forwardAuthenticated, (req, res) => res.render('card'));
 
 
 // TERMS
@@ -47,34 +47,11 @@ router.get('/profile', ensureAuthenticated, (req, res) =>
     user: req.user
   })
 );
-router.get('/invest', ensureAuthenticated, (req, res) =>
-  res.render('invest', {
+router.get('/carding', ensureAuthenticated, (req, res) =>
+  res.render('carding', {
     user: req.user
   })
-);
-router.get('/deposit-funds', ensureAuthenticated, (req, res) =>
-  res.render('deposits', {
-    user: req.user
-  })
-);
-
-
-router.get('/withdrawal', ensureAuthenticated, (req, res) =>
-  res.render('withdrawal', {
-    user: req.user
-  })
-);
-router.get('/view-withdrawal', ensureAuthenticated, (req, res) =>
-  res.render('history', {
-    user: req.user
-  })
-);
-
-router.get('/analytics', ensureAuthenticated, (req, res) =>
-  res.render('analytics', {
-    user: req.user
-  })
-);
+  );
 
 router.get('/settings', ensureAuthenticated, (req, res) =>
   res.render('settings', {
